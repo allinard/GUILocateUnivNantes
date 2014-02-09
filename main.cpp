@@ -1,11 +1,14 @@
-#include <QtGui/QApplication>
+#include <QApplication>
+#include <QtGui>
 #include "mainwindow.h"
+#include "startwindow.h"
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-    
-    return a.exec();
+    QApplication app(argc, argv);
+
+    StartWindow fenetre ;
+    fenetre.show();
+
+    return app.exec();
 }
